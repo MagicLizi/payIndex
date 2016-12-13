@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>支付</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>支付测试</h1>
+  <script>
+      function isWeixinBrowser(){
+          var ua = navigator.userAgent.toLowerCase();
+          return (/micromessenger/.test(ua)) ? true : false ;
+      }
+      if(isWeixinBrowser()){
+          window.location = 'http://wx.mingrivr.com/outerpay.html#100';
+      }
+      else{
+        alert('支付宝支付!');
+      }
+  </script>
+  </body>
+</html>
